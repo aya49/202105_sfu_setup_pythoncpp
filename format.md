@@ -7,3 +7,5 @@ sections:
 format
 - cheatsheet
 - non/interactive long/cheatsheet webpage
+
+terminal window + program file + executionable file
