@@ -30,8 +30,8 @@ Binary program code is almost impossible for us to read, let alone write, so we 
 3. execute: you let the computer execute the instructions in this binary.
 
 C++ and Python are two of the most popular programming languages invented. 
-- C++ is more difficult to write, but it is extremely efficient and powerful.
-- Python is much easier to write and is very popular, but it can be slower and less powerful.
+- **C++** is more difficult to write, but it is extremely efficient and powerful. Operating systems and lower level software are primarily written in C++.
+- **Python** is much easier to write and is very popular, but it can be slower and less powerful. Python is used for high level applications such as software developments, big data analysis, artificial intelligence, and machine learning.
 
 What makes programming so simple today is that people have already written many ready-to-use program codes. These codes are bundled into easy-to-use "functions" and groups of related functions are bundled into "packages" that we can just download and use.
 
@@ -50,8 +50,8 @@ There are two types of software you can use to edit your program code along with
   - [Visual studio code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are powerful and extendable text editors that, depending on how many extensions you install, can be comparable to an IDE. In exchange, they can be resource intensive.
 - IDEs  (integrated develpment environment): these are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually program language specific.
   - [Visual studio](https://visualstudio.microsoft.com/) and [Eclipse](http://www.eclipse.org/) are general purpose IDEs with an in-built terminal and options for extensions for when you want additional functionality.
-  - (Code::blocks)[http://www.codeblocks.org/] is an old-school easy to use IDEs for C++.
-  - (PyCharm)[https://www.jetbrains.com/pycharm/] and (Spyder)[https://github.com/spyder-ide/spyder] are popular Python IDEs used for general purpose coding and data science respecitvely.
+  - [Code::blocks](http://www.codeblocks.org/) is an old-school easy to use IDEs for C++.
+  - [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://github.com/spyder-ide/spyder) are popular Python IDEs used for general purpose coding and data science respecitvely.
 
 
 
@@ -193,7 +193,7 @@ If you are a CMPT student, you will also have access to CSIL (computing science 
 
 ## Need software?
 
-Check out the software made available to you as SFU students [here](https://www.sfu.ca/information-systems/services/software/list-of-software-at-sfu.html) and [here](http://www.sfu.ca/computing/about/support/csil/windows/how-to-get-software.html#current-offers) (for CMPT students)!
+Check out the software made available to you as SFU students [here](https://www.sfu.ca/information-systems/services/software/list-of-software-at-sfu.html) and as SFU CMPT students [here](http://www.sfu.ca/computing/about/support/csil/windows/how-to-get-software.html#current-offers)!
 
 # Programming
 
@@ -274,7 +274,7 @@ The notion of value vs pointer is what confuses most people, make sure you know 
 
 Arithmetic operators help you manipulate numerics: 
 - operators: 
-    - `+`, `-`, `*`, `/`; e.g. `int i = 4 + 5;`
+    - `+`, `-`, `*`, `/`, `%` (modulus/remainder); e.g. `int i = 4 + 5;`
 - shorthands: 
     - `++`, `--`; e.g. `i++;` is the same as `i = i + 1;`
     - `+=`, `-=`, `*=`, `/=`; e.g. `i += 1;` is the same as `i = i + 1;`
@@ -537,13 +537,13 @@ np.median(na1)       # 2; median of the array
 
 Arithmetic operators help you manipulate numerics: 
 - operators: 
-    - `+`, `-`, `*`, `/`; e.g. `i = 4 + 5;`
+    - `+`, `-`, `*`, `/`, `%` (modulus/remainder); e.g. `i = 4 + 5;`
 - shorthands: 
     - `+=`, `-=`, `*=`, `/=`; e.g. `i += 1;` is the same as `i = i + 1;`
 
 ### `if`/`else` statements
 
-`if` statements help add decision making to your program; its syntax works like this: `if (some statement)` is true, execute the code in indented below it. You can also add optional `elif` and `else` statements if you want to embed more decision making options.
+`if` statements help add decision making to your program; its syntax works like this: `if (some statement)` is true, execute the code **indented** below it. You can also add optional `elif` and `else` statements if you want to embed more decision making options.
 
 Hint: indentation is super important in Python, it does not use braces!
 
