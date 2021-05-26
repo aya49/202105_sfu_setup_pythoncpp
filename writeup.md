@@ -1,12 +1,3 @@
----
-title: "Programming"
-output: html_notebook
----
-
-Note:
-- Python 3
-- Linux > Ubuntu
-
 # What is programming?
 
 ## An example...
