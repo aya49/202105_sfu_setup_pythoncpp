@@ -4,58 +4,58 @@
 
 You've probably programmed before. When you enter `1+1` on a calculator, you are commanding it to calculate `1+1` for you. 
 
-Now what if you want your calculator to calculate lots of equations for you and you want it to calculate the same set of equations over and over in the future? Well you write those equations out on a text file and feed this text file into your calculator for it to calculate the equations in the text file for you. You can re-feed this text file any time you want the calculator to perform the same calculations in the future.
+Now, what if you want your calculator to calculate lots of equations for you and you want it to calculate the same set of equations over and over in the future? Well, you write those equations out on a text file and feed this text file into your calculator for it to calculate the equations in the text file for you. You can re-feed this text file any time you want the calculator to perform the same calculations in the future.
 
 You 
 - "programmed" (wrote) a set of equations or instructions into a 
 - "program" (the text file) so that 
 - your "computer" (calculator) could "execute" (conduct the calculations requested by) your program.
 
-## ...of a programming workflow
+## ...of programming workflow
 
 A computer is just a super powerful calculator... that can only read and execute programs written in binary i.e. 0s and 1s. We call these "binary" program files, "machine executable" files.
 
 Binary program code is almost impossible for us to read, let alone write, so we came up with this workflow:
-1. program: you write a program in a human read-able "programming language" to a program text file.
-2. compile: you get a "compiler" (translator) to "compile" (translate) your program text file into machine read-able binary file.
+1. program: you write a program in a human-readable "programming language" to a program text file.
+2. compile: you get a "compiler" (translator) to "compile" (translate) your program text file into a machine read-able binary file.
 3. execute: you let the computer execute the instructions in this binary.
 
 C++ and Python are two of the most popular programming languages invented. 
-- **C++** is more difficult to write, but it is extremely efficient and powerful. Operating systems and lower level software are primarily written in C++.
-- **Python** is much easier to write and is very popular, but it can be slower and less powerful. Python is used for high level applications such as software developments, big data analysis, artificial intelligence, and machine learning.
+- **C++** is more difficult to write, but it is extremely efficient and powerful. Operating systems and lower-level software are primarily written in C++.
+- **Python** is much easier to write and is very popular, but it can be slower and less powerful. Python is used for high-level applications such as software developments, big data analysis, artificial intelligence, and machine learning.
 
 What makes programming so simple today is that people have already written many ready-to-use program codes. These codes are bundled into easy-to-use "functions" and groups of related functions are bundled into "packages" that we can just download and use.
 
-Sometimes, these packages are coupled with easy to use GUI (graphical user interface) such that users don't even need to understand or use the associated programming language to run the code in the package; instead, complicated commands are coupled with visual buttons that users can click to use --- yep, that's basically what a software is.
+Sometimes, these packages are coupled with easy to use GUI (graphical user interface) such that users don't even need to understand or use the associated programming language to run the code in the package; instead, complicated commands are coupled with visual buttons that users can click to use --- yep, that's basically what software is.
 
-# Text editors and IDEs (integrated develpment environment)
+# Text editors and IDEs (integrated development environment)
 
-Let's start with getting some tools to complete step 1: writing a human read-able program.
+Let's start with getting some tools to complete step 1: writing a human-readable program.
 
 Your program code is essentially a text file, so you can edit it in any text editor. However, there are some text editors made specifically for coding!
 
 There are two types of software you can use to edit your program code along with some free software you can try out:
 - text editors: light-weight text editors that may have a few additional functionalities such as syntax (grammar) highlighting.
   - [Sublime text](https://www.sublimetext.com/) and [Notepad++](https://notepad-plus-plus.org/) are extremely light-weight and fast text editors.
-  - [Vim](https://www.vim.org/) is probably the most advanced text editor and most un-user friendly text editor on the list. It has a steep learning curve, but when you get used to it, it you will be able to edit code right out of a terminal (which will get useful if you are working out of computer without a screen)!
-  - [Visual studio code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are powerful and extendable text editors that, depending on how many extensions you install, can be comparable to an IDE. In exchange, they can be resource intensive.
-- IDEs  (integrated develpment environment): these are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually program language specific.
-  - [Visual studio](https://visualstudio.microsoft.com/) and [Eclipse](http://www.eclipse.org/) are general purpose IDEs with an in-built terminal and options for extensions for when you want additional functionality.
+  - [Vim](https://www.vim.org/) is probably the most advanced text editor and most un-user-friendly text editor on the list. It has a steep learning curve, but when you get used to it, you will be able to edit code right out of a terminal (which will get useful if you are working out of a computer without a screen)!
+  - [Visual studio code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are powerful and extendable text editors that, depending on how many extensions you install, can be comparable to an IDE. In exchange, they can be resource-intensive.
+- IDEs  (integrated development environment): these are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually program language-specific.
+  - [Visual Studio](https://visualstudio.microsoft.com/) and [Eclipse](http://www.eclipse.org/) are general purpose IDEs with an in-built terminal and options for extensions for when you want additional functionality.
   - [Code::blocks](http://www.codeblocks.org/) is an old-school easy to use IDEs for C++.
-  - [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://github.com/spyder-ide/spyder) are popular Python IDEs used for general purpose coding and data science respecitvely.
+  - [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://github.com/spyder-ide/spyder) are popular Python IDEs used for general-purpose coding and data science respecitvely.
 
 
 
-# Setting up your computer to program in C++ and Python
+# Set up your computer for programming with a terminal (C++ and Python)
 
-The easiest way to work with C++ and Python is via a unix terminal. In this section, we will go set up this "terminal" on your system.
+The easiest way to work with C++ and Python is via a Unix terminal. In this section, we will go set up this "terminal" on your system.
 
 ## Windows
 
-On Windows 10+, your OS comes with a the a Windows subsystem for linux (WSL) which allows you to interface with your OS via a unix terminal.
+On Windows 10+, your OS comes with a Windows subsystem for Linux (WSL) which allows you to interface with your OS via a Unix terminal.
 
-If you don't have it installed already, let's enable WSL and install a linux distribution:
-- open PowerShell as admin: start > search for "PowerShell" > right click Windows PowerShell and select Run as administrator.
+If you don't have it installed already, let's enable WSL and install a Linux distribution:
+- open PowerShell as admin: start > search for "PowerShell" > right-click Windows PowerShell and select Run as administrator.
 - paste the following command into the PowerShell and press the `enter` key:
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
@@ -82,21 +82,21 @@ Now you're all set up to use your terminal in Windows to work with C++ and Pytho
 
 ## Linux & Mac 
 
-If your operating system (OS) is a Linux or a Mac, Python and C++ is pre-installed and set up on your machine! It's just a matter of opening up the terminal and using them.
+If your operating system (OS) is a Linux or a Mac, Python and C++ are pre-installed and set up on your machine! It's just a matter of opening up the terminal and using them.
 
 For Linux computers, this guide assumes you are using a Gnome-based desktop environment (e.g. Ubuntu) that interfaces between you and Linux.
 
 Let's open up your terminal:
-- open the application menu (Linux) / launchpad (F4 on MacOS).
-- enter search term "terminal".
+- open the application menu (Linux) / launchpad (F4 on macOS).
+- enter the search term "terminal".
 - click on the application "terminal".
 
 
-## Terminal
+## Using your terminal
 
 The terminal is an interface where you can type commands for your OS to execute.
 
-Think of your terminal as a dumbed down Siri who only takes super specific commands and you have to type the command out by hand; but as long as you know what the commands are, your terminal executes anything you would imagine you could do on an operating system, including executing your Python or C++ program.
+Think of your terminal as a dumbed-down Siri who only takes super specific commands and you have to type the command out by hand; but as long as you know what the commands are, your terminal executes anything you would imagine you could do on an operating system, including executing your Python or C++ program.
 
 If you have Firefox on your computer, you can let your terminal open it up for you; try typing the following command (not including the `$`) and pressing `enter`:
 
@@ -104,15 +104,15 @@ If you have Firefox on your computer, you can let your terminal open it up for y
 $ firefox
 ```
 
-To terminate the command, press `ctrl-C` inside the terminal (select your terminal window to do anything in the terminal).
+To terminate the command, press `ctrl-c` inside the terminal (select your terminal window to do anything in the terminal).
 
 You can even navigate your files! Here are a few basic commands:
 - `$ ls`: list the contents in your current directory.
 - `$ cd [directory]`: "change directory" i.e. go to the `[directory]` or the folder (that you saw when you `ls`-ed);
-  - `$ cd /`: go to the root directory in your Linux & MacOS.
+  - `$ cd /`: go to the root directory in your Linux & macOS.
   - `cd /mnt/c`: go to the C drive on your Windows.
   - `$ cd ..`: go to the parent directory.
-  - On a MacOS, an easy way to go to your current directory is by typing `$ cd `, and then dragging a file from your desired directory in the file explorer into your terminal; you will see that the complete "path" or series of directories leading to your file is copied into your terminal. Don't forget to delete the file name from the path because you're "changing directories" not files (e.g. `/home/users/yourname/yourfile.txt` > `/home/users/yourname/`).
+  - On a macOS, an easy way to go to your current directory is by typing `$ cd `, and then dragging a file from your desired directory in the file explorer into your terminal; you will see that the complete "path" or series of directories leading to your file is copied into your terminal. Don't forget to delete the file name from the path because you're "changing directories" not files (e.g. `/home/users/yourname/yourfile.txt` > `/home/users/yourname/`).
 - `$ mkdir [directory]`: make a new directory.
 - `$ rm [file]` / `$ rm -rf [directory]`: remove (delete) a file / directory (`-rf` means to "recursively" remove the directory and everything inside of it without requiring confirmation).
 - `$ cp [file1] [file2]` / `$ cp -r [directory1] [directory2]`: copy and paste `[file1]` as `[file2]` / `[directory1]` as `[directory2]`.
@@ -143,8 +143,8 @@ program: main.cpp
     g++ -o $@ main.cpp
 ```
 - `program` is the name of your command, 
-- the files listed after it tells your compiler at what order it should compile the files (in this case it doesn't matter because there is just one file),
-- the command(s) on the second line start with a tab, and
+- the files listed after it tells your compiler in what order the compiler should compile the files (in this case it doesn't matter because there is just one file),
+- the command(s) on the second line starts with a tab, and
 - `$@` refers to `program` so you don't have to type it over again i.e. the command on the second line is exactly the same as the command you wrote earlier.
 
 Now, instead of typing the `g++ ...` command over and over again,
@@ -163,7 +163,7 @@ $ ./program
 
 ### Working with Python
 
-Instead of us having to manually compile our program, Python works with an interpreter. While compilers translate entire programs at a time, the interpreter translates a single line of code at a time, does not create a binary file but rather directly runes the translated line of code at the request of the user. Interpreters are therefore slower, require less memory (since it's just one line at a time), and can feel a lot more automatic as it seemlessly directly run user written code.
+Instead of us having to manually compile our program, Python works with an interpreter. While compilers translate entire programs at a time, the interpreter translates a single line of code at a time, does not create a binary file but rather directly runes the translated line of code at the request of the user. Interpreters are therefore slower, require less memory (since it's just one line at a time), and can feel a lot more automatic as it seamlessly directly run user-written code.
 
 1. Program: let's assume you have written Python 3 code in some text editor and saved it to file `main.py` (`.py` is the extension for Python code).
 2. Execute: you don't need to compile the code manually, just use the Python interpreter and it will automatically execute your code for you!
@@ -175,7 +175,7 @@ $ python main.py
 
 If you ever need access to computers or software at SFU, you can!
 1. Click [here](https://www.sfu.ca/information-systems/services/mfa.html) to set up MFA (multi-factor authentication), you will need to do this before you start remote accessing any SFU computers.
-2. Click [here](https://www.lib.sfu.ca/about/remote-access-library-lab-computers) for instructions on how to access the Burnaby or Surrey library lab computers and software from off campus.
+2. Click [here](https://www.lib.sfu.ca/about/remote-access-library-lab-computers) for instructions on how to access the Burnaby or Surrey library lab computers and software from off-campus.
 
 If you are a CMPT student, you will also have access to CSIL (computing science instructional labs).
 1. Click [here](https://www.sfu.ca/information-systems/services/mfa.html) to set up MFA (multi-factor authentication).
@@ -272,7 +272,7 @@ Arithmetic operators help you manipulate numerics:
 
 ### `if`/`else` statements
 
-`if` statements help add decision making to your program; its syntax works like this: `if (some statement)` is true, execute the code in `{...}`. You can also add optional `else if` and `else` statements if you want to embed more decision making options.
+`if` statements help add decision-making to your program; its syntax works like this: `if (some statement)` is true, execute the code in `{...}`. You can also optionally add `else if` and `else` statements if you want to embed more decision-making options.
 
 ```C++
 if (i > 2) {
@@ -302,7 +302,7 @@ The following are logical operators you can use in conditional statements `(...)
 
 ### Loops
 
-If you have a list of values you want to loop through, repeating the same piece of code for each value, you can repeat the that piece of code over and over again (not a good idea):
+If you have a list of values you want to loop through, repeating the same piece of code for each value, you can repeat that piece of code over and over again (not a good idea):
 
 ```C++
 int i = 0;
@@ -321,7 +321,7 @@ i = 4;
 std::cout << i;
 ```
 
-OR use one of any of the following loops that does the same thing.
+OR use any one of the following loops that do the same thing.
 
 `while` loop: `while` my condition `(...)` is true, execute the code in `{...}`.
 ```C++
@@ -411,7 +411,7 @@ A **variable** is a defined value that holds data and is defined by its:
 i = 0
 ```
 
-The data type and pointer is all implicit; you don't have to worry about how much memory your variable value takes up!
+The data type and pointer are all implicit; you don't have to worry about how much memory your variable value takes up!
 
 You can convert a variable to a certain data type using functions:
 
@@ -437,7 +437,7 @@ s.replace('e','p') # 'hpllo world!'; replaces a 'e' with 'p'
 s.strip()          # 'hplloworld!'; strips whitespaces
 ```
 
-An **list** is a dynamic (meaning it can change in length) list of values not necessarily of the same data type; lists are also nest-able.
+A **list** is a dynamic (meaning it can change in length) list of values not necessarily of the same data type; lists are also nestable.
 
 The index of a list starts at `0` and can be accessed with `[...]`.
 
@@ -488,14 +488,14 @@ dict["colour"] = "white" # {"brand": "Honda", "year": 2020, "colour": "white"}; 
 
 ### Installing and using Python packages
 
-A **numpy array** is an array data structure that contains a list of values of the same data type; arrays are also nest-able. This data structure provided to you in the numpy package.
+A **NumPy array** is an array data structure that contains a list of values of the same data type; arrays are also nestable. This data structure is provided to you in the NumPy package.
 
-To install a new package numpy, in your terminal, use `pip`:
+To install a new package NumPy, in your terminal, use `pip`:
 ```
 $ pip install numpy
 ```
 
-Now you import and use numpy functions and data structure, including numpy arrays! Nested arrays are called nD arrays, most commonly, you would use a 2D array, which is analagous to a matrix. The indexing of a 2D  array is as intuitive as indexing in a matrix.
+Now you import and use NumPy functions and data structure, including NumPy arrays! Nested arrays are called nD arrays, most commonly, you would use a 2D array, which is analogous to a matrix. The indexing of a 2D  array is as intuitive as indexing in a matrix.
 
 ```Python
 import numpy as np
@@ -534,7 +534,7 @@ Arithmetic operators help you manipulate numerics:
 
 ### `if`/`else` statements
 
-`if` statements help add decision making to your program; its syntax works like this: `if (some statement)` is true, execute the code **indented** below it. You can also add optional `elif` and `else` statements if you want to embed more decision making options.
+`if` statements help add decision-making to your program; its syntax works like this: `if (some statement)` is true, execute the code **indented** below it. You can also add optional `elif` and `else` statements if you want to embed more decision-making options.
 
 Hint: indentation is super important in Python, it does not use braces!
 
@@ -565,7 +565,7 @@ The following are logical operators you can use in conditional statements `(...)
 
 ### Loops
 
-If you have a list of values you want to loop through, repeating the same piece of code for each value, you can repeat the that piece of code over and over again (not a good idea):
+If you have a list of values you want to loop through, repeating the same piece of code for each value, you can repeat that piece of code over and over again (not a good idea):
 
 ```Python
 i = 0
@@ -584,7 +584,7 @@ i = 4
 print(i)
 ```
 
-OR use one of any of the following loops that does the same thing.
+OR use one of any of the following loops that do the same thing.
 
 `while` loop: `while` my condition is true `:`, execute the code indented below.
 ```Python
