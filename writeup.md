@@ -4,12 +4,9 @@
 
 You've probably programmed before. When you enter `1+1` on a calculator, you are commanding it to calculate `1+1` for you. 
 
-Now, what if you want your calculator to calculate lots of equations for you and you want it to calculate the same set of equations over and over in the future? Well, you write those equations out on a text file and feed this text file into your calculator for it to calculate the equations in the text file for you. You can re-feed this text file any time you want the calculator to perform the same calculations in the future.
-
-You 
-- "programmed" (wrote) a set of equations or instructions into a 
-- "program" (the text file) so that 
-- your "computer" (calculator) could "execute" (conduct the calculations requested by) your program.
+Now, what if you want your calculator to calculate lots of equations for you over and over in the future? Well, you write those equations out on a text file and feed this text file into your calculator for it to calculate the equations in the text file for you. This way, you can re-feed this text file any time you want the calculator to perform the same calculations in the future i.e. you:
+1. "programmed" (wrote) a set of equations or instructions into a "program" (a text file) so that 
+2. your "computer" (calculator) could "execute" (do the calculations requested by) your program.
 
 ## ...of programming workflow
 
@@ -20,26 +17,24 @@ Binary program code is almost impossible for us to read, let alone write, so we 
 2. compile: you get a "compiler" (translator) to "compile" (translate) your program text file into a machine read-able binary file.
 3. execute: you let the computer execute the instructions in this binary.
 
-C++ and Python are two of the most popular programming languages invented. 
+C++ and Python are two of the most popular **programming languages**. 
 - **C++** is more difficult to write, but it is extremely efficient and powerful. Operating systems and lower-level software are primarily written in C++.
-- **Python** is much easier to write and is very popular, but it can be slower and less powerful. Python is used for high-level applications such as software developments, big data analysis, artificial intelligence, and machine learning.
+- **Python** is much easier to write and is very popular, but it gives you less control. Python is used for high-level applications such as software development, data analysis, and artificial intelligence.
 
 What makes programming so simple today is that people have already written many ready-to-use program codes. These codes are bundled into easy-to-use "functions" and groups of related functions are bundled into "packages" that we can just download and use.
 
 Sometimes, these packages are coupled with easy to use GUI (graphical user interface) such that users don't even need to understand or use the associated programming language to run the code in the package; instead, complicated commands are coupled with visual buttons that users can click to use --- yep, that's basically what software is.
 
-# Text editors and IDEs (integrated development environment)
+# Text editors and IDEs
 
 Let's start with getting some tools to complete step 1: writing a human-readable program.
 
-Your program code is essentially a text file, so you can edit it in any text editor. However, there are some text editors made specifically for coding!
-
-There are two types of software you can use to edit your program code along with some free software you can try out:
-- text editors: light-weight text editors that may have a few additional functionalities such as syntax (grammar) highlighting.
+Your program code is essentially a text file, so you can edit it in any text editor. There are two types of text editing software you can use to write your program:
+- **text editors** are light-weight text editors that may have a few additional functionalities such as syntax (grammar) highlighting.
   - [Sublime text](https://www.sublimetext.com/) and [Notepad++](https://notepad-plus-plus.org/) are extremely light-weight and fast text editors.
   - [Vim](https://www.vim.org/) is probably the most advanced text editor and most un-user-friendly text editor on the list. It has a steep learning curve, but when you get used to it, you will be able to edit code right out of a terminal (which will get useful if you are working out of a computer without a screen)!
   - [Visual studio code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are powerful and extendable text editors that, depending on how many extensions you install, can be comparable to an IDE. In exchange, they can be resource-intensive.
-- IDEs  (integrated development environment): these are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually program language-specific.
+- **IDEs** (integrated development environment) are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually language-specific.
   - [Visual Studio](https://visualstudio.microsoft.com/) and [Eclipse](http://www.eclipse.org/) are general purpose IDEs with an in-built terminal and options for extensions for when you want additional functionality.
   - [Code::blocks](http://www.codeblocks.org/) is an old-school easy to use IDEs for C++.
   - [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://github.com/spyder-ide/spyder) are popular Python IDEs used for general-purpose coding and data science respecitvely.
@@ -55,16 +50,16 @@ The easiest way to work with C++ and Python is via a Unix terminal. In this sect
 On Windows 10+, your OS comes with a Windows subsystem for Linux (WSL) which allows you to interface with your OS via a Unix terminal.
 
 If you don't have it installed already, let's enable WSL and install a Linux distribution:
-- open PowerShell as admin: start > search for "PowerShell" > right-click Windows PowerShell and select Run as administrator.
+- open PowerShell as administrator: "start" > search for "PowerShell" > right-click "Windows PowerShell" and select "Run as administrator".
 - paste the following command into the PowerShell and press the `enter` key:
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 - restart your computer on prompt.
-- now that you have WSL enabled, let's install the [Ubuntu](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6) distribution!
+- now that you have WSL enabled, let's install the Ubuntu distribution [here](https://www.microsoft.com/store/p/ubuntu/9nblggh4msv6)!
 - after you've installed Ubuntu, open it up! If this is the first time you're opening it up, it should say it's installing. After that is finished, give yourself a username and password.
 
-Now that you have a terminal (like the one you would have on Linux Ubuntu), you will need to install:
+Now that you have a terminal (like the one you would have on Ubuntu), you will need to install:
 - a C++ compiler `g++` by installing the GNU compiler tools and the GDB debugger (`sudo` means to run as admin, `whereis` verifies successful installation),
 ```
 $ sudo apt-get update
@@ -74,7 +69,7 @@ $ whereis g++
 - and Python 3.
 ```
 $ sudo apt update && upgrade
-sudo apt install python3 python3-pip ipython3
+$ sudo apt install python3 python3-pip ipython3
 ```
 
 Now you're all set up to use your terminal in Windows to work with C++ and Python :)!
@@ -82,35 +77,34 @@ Now you're all set up to use your terminal in Windows to work with C++ and Pytho
 
 ## Linux & Mac 
 
-If your operating system (OS) is a Linux or a Mac, Python and C++ are pre-installed and set up on your machine! It's just a matter of opening up the terminal and using them.
+If your OS is a Linux or a Mac, Python and C++ are pre-installed and set up on your machine! It's just a matter of opening up the terminal and using them.
 
 For Linux computers, this guide assumes you are using a Gnome-based desktop environment (e.g. Ubuntu) that interfaces between you and Linux.
 
-Let's open up your terminal:
-- open the application menu (Linux) / launchpad (F4 on macOS).
-- enter the search term "terminal".
-- click on the application "terminal".
+Let's open up your terminal: application menu (Linux) / launchpad (macOS) > search for "terminal" and select it.
 
 
 ## Using your terminal
 
 The terminal is an interface where you can type commands for your OS to execute.
 
-Think of your terminal as a dumbed-down Siri who only takes super specific commands and you have to type the command out by hand; but as long as you know what the commands are, your terminal executes anything you would imagine you could do on an operating system, including executing your Python or C++ program.
+Think of your terminal as a _**dumbed-down Siri**_ who only takes super specific commandstyped out commands; but as long as you know what the commands are, your terminal can do almost anything! Including executing your C++ or Python program.
 
-If you have Firefox on your computer, you can let your terminal open it up for you; try typing the following command (not including the `$`) and pressing `enter`:
+If you have Firefox on your computer, you can let your terminal open it up for you; try typing the following command and pressing `enter`:
 
 ```
 $ firefox
 ```
 
-To terminate the command, press `ctrl-c` inside the terminal (select your terminal window to do anything in the terminal).
+Pro tip: select your terminal window to do anything in the terminal.
+
+Pro tip: press `ctrl-c` inside the terminal to terminate or stop any command, .
 
 You can even navigate your files! Here are a few basic commands:
 - `$ ls`: list the contents in your current directory.
 - `$ cd [directory]`: "change directory" i.e. go to the `[directory]` or the folder (that you saw when you `ls`-ed);
   - `$ cd /`: go to the root directory in your Linux & macOS.
-  - `cd /mnt/c`: go to the C drive on your Windows.
+  - `$ cd /mnt/c`: go to the C drive on your Windows.
   - `$ cd ..`: go to the parent directory.
   - On a macOS, an easy way to go to your current directory is by typing `$ cd `, and then dragging a file from your desired directory in the file explorer into your terminal; you will see that the complete "path" or series of directories leading to your file is copied into your terminal. Don't forget to delete the file name from the path because you're "changing directories" not files (e.g. `/home/users/yourname/yourfile.txt` > `/home/users/yourname/`).
 - `$ mkdir [directory]`: make a new directory.
