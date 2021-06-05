@@ -210,7 +210,7 @@ Each variable can be defined by its:
 
 An **array** is a static (meaning it cannot change in length) list of values of the same data type; unlike variables, an array is "passed" as its pointer by default i.e. the variable name of an array is synonymous to its pointer.
 
-The index of an array starts at `0` and can be accessed with `[...]`
+The index of an array starts at `0` and can be accessed with `[...]`.
 
 ```C++
 int ia[3] = {6,3,1};
@@ -282,7 +282,7 @@ if (i > 2) {
 }
 ```
 
-The following are logical operators you can use in conditional statements `(...)` to help you with your decision making:
+The following are infix operators you can use in conditional statements `(...)` to help you with your decision making:
 
 | name                     | syntax       |
 | ------------------------ | ------------ |
@@ -325,7 +325,7 @@ while (i < 5) {
 }
 ```
 
-`do`/`while`: `do` execute the code in `{...}`; `while` my condition `(...)` is true, repeat; this guarantees that the code in `{...}` executes at least once.
+`do`/`while` loop: `do` execute the code in `{...}`; `while` my condition `(...)` is true, repeat; this guarantees that the code in `{...}` executes at least once.
 
 ```C++
 int i = 0;
@@ -334,7 +334,7 @@ do {
 } while (i < 5);
 ```
 
-`for`: initialize variable `i` to `0`; `for` as long as `i < 5`, execute the code in `{...}` and `i++` at the end of each execution.
+`for` loop: initialize variable `i` to `0`; `for` as long as `i < 5`, execute the code in `{...}` and `i++` at the end of each execution.
 
 Recall: you can use `for (int x: iv)` to loop through each element `x` of vector `iv`, convenient huh.
 
@@ -366,18 +366,16 @@ int main () {
 }
 ```
 
-it's useful to **encapsulate** repeating code into a **function**: `int` is the `return` type, `mean` is the function name, `(int a, int b)` are its two input arguments.
-
-Jargon: when we use a function and give it some input, we say we "call" a function and "pass" arguments into the function.
-
-Recall: when we pass a variable into a function, we pass its value; when we pass an array into a function, we pass its pointer.
+it's useful to **encapsulate** repeating code into a **function**:
 
 ```C++
+// function definition
 int mean(int a, int b) {
     int mn = (a + b) / 2;
     return mn;
 }
 
+// calling the function
 int main () {
     int mn1 = mean(5, 6);
     int mn2 = mean(2, 3);
@@ -387,9 +385,18 @@ int main () {
 }
 ```
 
+A function definition includes:
+- a `return` type: `int`
+- function name: `mean`
+- input arguments: `(int a, int b)`
+
+Jargon: when we use a function and give it some input, we say we "call" a function and "pass" arguments into the function.
+
+Recall: when we pass a variable into a function, we pass its value; when we pass an array into a function, we pass its pointer.
+
 ## Python
 
-You can pull up documentation about a certain, e.g. function, in the Python interpreter (which you can bring up using `python` in your terminal) using `help`
+Pro tip: you can pull up documentation about a certain, e.g. function, in the Python interpreter (which you can bring up using `python` in your terminal) using `help`:
 ```
 $ python 
 >> help(str)
@@ -397,13 +404,14 @@ $ python
 
 ### Variables
 
-A **variable** is a defined value that holds data and is defined by its:
-1. **variable name**; the name you give to the variable.
-2. **value**; a variable is "passed" as its value by default i.e. the variable name is synonymous to its value.
+A **variable** is a defined value that holds data.
 
 ```Python
 i = 0
 ```
+A variable is defined by its:
+1. **variable name**; the name you give to the variable.
+2. **value**
 
 The data type and pointer are all implicit; you don't have to worry about how much memory your variable value takes up!
 
@@ -416,7 +424,7 @@ You can convert a variable to a certain data type using functions:
 | `float(i)`   | `0.0`   |
 | `bool(i)`  | `False` (in boolean, `0 == False`, everything else is `True`)  |
 
-In Python, each data type has a specific set of **methods**, function-like things, that you can apply to variables of that data type.
+In Python, each data type has a specific set of **methods**, functions that you can apply to variables of that data type.
 
 Methods for strings `str` include:
 
@@ -522,9 +530,9 @@ np.median(na1)       # 2; median of the array
 
 Arithmetic operators help you manipulate numerics: 
 - operators: 
-    - `+`, `-`, `*`, `/`, `%` (modulus/remainder); e.g. `i = 4 + 5;`
+    - `+`, `-`, `*`, `/`, `%` (modulus/remainder); e.g. `i = 4 + 5`
 - shorthands: 
-    - `+=`, `-=`, `*=`, `/=`; e.g. `i += 1;` is the same as `i = i + 1;`
+    - `+=`, `-=`, `*=`, `/=`; e.g. `i += 1` is the same as `i = i + 1`
 
 ### `if`/`else` statements
 
@@ -535,14 +543,10 @@ Hint: indentation is super important in Python, it does not use braces!
 ```Python
 if i > 2:
     # code you want Python to run if statement is true
-
-if i > 2:
-    # code you want Python to run if statement is true
 elif i == 2:
     # code you want Python to run if statement is true
 else: # i < 2
     # code you want Python to run otherwise
-
 ```
 
 The following are logical operators you can use in conditional statements `(...)` to help you with your decision making:
@@ -588,7 +592,7 @@ while i < 5:
     i += 1
 ```
 
-`for`: `for` each element in some list, run the indented code.
+`for` loop: `for` each element in some list, run the indented code.
 
 ```Python
 fruits = ['apple', 'banana', 'orange']
@@ -614,11 +618,7 @@ b = 7
 mn3 = (a + b) / 2
 ```
 
-it's useful to **encapsulate** repeating code into a **function**: `def` starts your function definition, `mean` is the function name, `(a, b)` are its two input arguments.
-
-Jargon: when we use a function and give it some input, we say we "call" a function and "pass" arguments into the function.
-
-Recall: when we pass a variable into a function, we pass its value; when we pass an array into a function, we pass its pointer.
+it's useful to **encapsulate** repeating code into a **function**:
 
 ```Python
 def mean(a, b):
@@ -629,3 +629,10 @@ mn1 = mean(5, 6)
 mn2 = mean(2, 3)
 mn3 = mean(1, 7)
 ```
+In a function definition:
+- the keyword: `def` that starts your function definition
+- function name: `mean`
+- input arguments: `(a, b)`
+- the function body is indented below `def`
+
+Jargon: when we use a function and give it some input, we say we "call" a function and "pass" arguments into the function.

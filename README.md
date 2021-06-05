@@ -1,0 +1,2 @@
+- [markdown](writeup.md)
+- [pdf](https://docs.google.com/presentation/d/1VBpHAtpmGlmJrBQ6zO01zd1h2voCADxoGu0IBTb_6QE/edit?usp=sharing)
