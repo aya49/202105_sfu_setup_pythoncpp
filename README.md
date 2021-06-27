@@ -2,7 +2,7 @@
 
 2021-06-16
 
-This repository contains materials for the programming prep section of FAS START, an introductory online course for undergraduate students starting their first year at the faculty of applied science (FAS) at Simon Fraser University (SFU) in fall 2021. Thank you to MJ and Tatenda for giving me the opportunity to contribute :)
+This repository contains materials for the programming prep section of [FAS START](https://canvas.sfu.ca/courses/62389), an introductory online course for undergraduate students starting their first year at the faculty of applied science (FAS) at Simon Fraser University (SFU) in fall 2021. Thank you to MJ and Tatenda for giving me the opportunity to contribute :)
 
 The programming prep section is meant to give students an introduction on how to set-up their computers for programming, a guide on the programming workflow, and a primer to popular programming languages C++ and Python.
 
