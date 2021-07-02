@@ -30,11 +30,12 @@ Sometimes, these packages are coupled with easy to use GUI (graphical user inter
 Let's start with getting some tools to complete step 1: writing a human-readable program.
 
 Your program code is essentially a text file, so you can edit it in any text editor. There are two types of text editing software you can use to write your program:
-- **text editors** are light-weight text editors that may have a few additional functionalities such as syntax (grammar) highlighting.
+- **text editors** are light-weight text editors that have a few additional functionalities over notepad, such as syntax (grammar) highlighting.
   - [Sublime text](https://www.sublimetext.com/) and [Notepad++](https://notepad-plus-plus.org/) are extremely light-weight and fast text editors.
   - [Vim](https://www.vim.org/) is probably the most advanced text editor and most un-user-friendly text editor on the list. It has a steep learning curve, but when you get used to it, you will be able to edit code right out of a terminal (which will get useful if you are working out of a computer without a screen)!
   - [Visual studio code](https://code.visualstudio.com/) and [Atom](https://atom.io/) are powerful and extendable text editors that, depending on how many extensions you install, can be comparable to an IDE. In exchange, they can be resource-intensive.
-- **IDEs** (integrated development environment) are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually language-specific.
+
+- **IDEs** (integrated development environment) are heavy-weight text editors plus all the other tools you will need during the programming process. These tools are usually program language-specific.
   - [Visual Studio](https://visualstudio.microsoft.com/) and [Eclipse](http://www.eclipse.org/) are general purpose IDEs with an in-built terminal and options for extensions for when you want additional functionality.
   - [Code::blocks](http://www.codeblocks.org/) is an old-school easy to use IDEs for C++.
   - [PyCharm](https://www.jetbrains.com/pycharm/) and [Spyder](https://github.com/spyder-ide/spyder) are popular Python IDEs used for general-purpose coding and data science respecitvely.
@@ -102,7 +103,7 @@ Pro tip: press `ctrl-c` inside the terminal to terminate or stop any command, .
 
 You can even navigate your files! Here are a few basic commands:
 - `$ ls`: list the contents in your current directory.
-- `$ cd [directory]`: "change directory" i.e. go to the `[directory]` or the folder (that you saw when you `ls`-ed);
+- `$ cd [directory]`: "change directory" i.e. go to the directory or the folder (that you saw when you `ls`-ed);
   - `$ cd /`: go to the root directory in your Linux & macOS.
   - `$ cd /mnt/c`: go to the C drive on your Windows.
   - `$ cd ..`: go to the parent directory.
