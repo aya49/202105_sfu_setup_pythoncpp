@@ -9,6 +9,6 @@ The programming prep section is meant to give students an introduction on how to
 See programming prep below in its different formats:
 
 - [Markdown](writeup.md)
-- [PDF (google slides)](https://docs.google.com/presentation/d/1VBpHAtpmGlmJrBQ6zO01zd1h2voCADxoGu0IBTb_6QE/edit?usp=sharing), [PDF (powerpoint)](pdf.pptx), [PDF](2021-06-16_pdf.pdf)
+- [PDF (google slides)](https://docs.google.com/presentation/d/1VBpHAtpmGlmJrBQ6zO01zd1h2voCADxoGu0IBTb_6QE/edit?usp=sharing), [PDF (powerpoint)](pdf.pptx), [PDF](2021-07-01_pdf.pdf)
 
 See [here](quiz.md) for a follow-up quiz.
