@@ -418,25 +418,25 @@ The data type and pointer are all implicit; you don't have to worry about how mu
 You can convert a variable to a certain data type using functions:
 
 | Data type | Output |
-|-----------|---------|
-| `str(i)`    | `'0'`   |
-| `int(i)`     | `0`     |
-| `float(i)`   | `0.0`   |
-| `bool(i)`  | `False` (in boolean, `0 == False`, everything else is `True`)  |
+|-----------|--------|
+| `str(i)`  | `'0'`  |
+| `int(i)`  | `0`    |
+| `float(i)`| `0.0`  |
+| `bool(i)` | `False` (in boolean, `0 == False`, everything else is `True`)  |
 
 In Python, each data type has a specific set of **methods**, functions that you can apply to variables of that data type.
 
 Methods for strings `str` include:
 
 ```Python
-s = 'Hello World!'
+s = 'Hello World! '
 s[4]               # 'o'; indexing characters
 s[3:5]             # 'lo'; in/ex-cludes the first/last index
-s.upper()          # 'HELLO WORLD!'; converts to upper case
-s.lower()          # 'hello world!'; converts to lower case
+s.upper()          # 'HELLO WORLD! '; converts to upper case
+s.lower()          # 'hello world! '; converts to lower case
 s.count('l')       # 3; counts number of times 'l' occurs
-s.replace('e','p') # 'hpllo world!'; replaces a 'e' with 'p'
-s.strip()          # 'hplloworld!'; strips whitespaces
+s.replace('e','p') # 'hpllo world! '; replaces a 'e' with 'p'
+s.strip()          # 'hpllo world! '; strips whitespaces
 ```
 
 A **list** is a dynamic (meaning it can change in length) list of values not necessarily of the same data type; lists are also nestable.
@@ -559,7 +559,7 @@ The following are logical operators you can use in conditional statements `(...)
 | greater than             | `>`          |
 | less than or equal to    | `<=`         |
 | greater than or equal to | `>=`         |
-| not                      | `!`          |
+| not                      | `not`        |
 
 ### Loops
 
